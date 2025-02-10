@@ -13,9 +13,9 @@ See [agents](./agents) for more information.
 
 ## Poster presented at MAIN 2024 (Montreal Artificial Intelligence and Neuroscience)
 
-"The Impact of Punishment Sensitivity and Learning Rate on Anxiety: A Computational Modeling Approach in a Sequential Evaluation Task".
+"The Impact of Punishment Sensitivity and Learning Rate on Anxiety: A Computational Modeling Approach in a Sequential Evaluation Task". This work won the Best Undergraduate Poster Award.
 
-See abstract [here](https://www.main2024.org/abstracts). This work gained the Best Undergraduate Poster Award. 
+See abstract [here](https://www.main2024.org/abstracts).
 
 ## Experiment Notebook
 
