@@ -3,10 +3,17 @@
 
 Neuro-Nav (Juliani, A. et. al, 2022), an open-source library for neurally plausible reinforcement learning (RL), was used to perform the simulations and program the RL models developed in the thesis project.  
 
-The main modifications added to the neronav library are the following two models implementations: 
+The main modifications added to the neronav library are the following: 
 
+- TDSR - finisehd to implement the B-pessimisitc module to the succesors function.
+- TDSR_RP - added different learning rate for rewards and punishments to the TDSR model, which we call as a-SR.
 - DynaSR_B - refeering to the Dyna B-pessimistic SR model implementation.
 - DynaSR_RP - refeering to the Dyna a-SR model implementation.
+
+As a side project a variation of the SR model with elegibility traces was programmed, as well as a model that combines the B-pessimisitc module and DynaSR_RP. 
+
+- TDSR_ET - SR with temporal difference learning and alegibility traces.
+- TDSR_AB - SR model that combines the B-pessimistic module and different learning rate for rewards and punishments.
 
 See [agents](./agents) for more information.
 
