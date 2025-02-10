@@ -23,9 +23,9 @@ See [agents](./agents) for more information.
 
 Currently a scientific paper is in preparation, but you can see the [poster](.Poster_MAIN_2024.pdf) and [abstract](https://www.main2024.org/abstracts) of the work presented at MAIN.
 
-## Experiment Notebook
+## Experiment's Notebook
 
-A Google Colab Notebook includes the simulations made for the thesis project. 
+A Google Colab Notebook includes the simulations made for the thesis project. It has text with brief explanations in spanish and english as well.
 
 See [Notebook.ipynb](./Notebook.ipynb) for more information.
 
