@@ -10,12 +10,11 @@ The main modifications added to the neronav library are the following two models
 
 See [agents](./agents) for more information.
 
-
 ## Poster presented at MAIN 2024 (Montreal Artificial Intelligence and Neuroscience)
 
 "The Impact of Punishment Sensitivity and Learning Rate on Anxiety: A Computational Modeling Approach in a Sequential Evaluation Task". This work won the Best Undergraduate Poster Award.
 
-See abstract [here](https://www.main2024.org/abstracts).
+Currently a scientific paper is in preparation, but you can see the [poster](.Poster_MAIN_2024.pdf) and [abstract](https://www.main2024.org/abstracts) of the work presented at MAIN.
 
 ## Experiment Notebook
 
