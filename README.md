@@ -23,7 +23,7 @@ Currently a scientific paper is in preparation, but you can see the [poster](.Po
 
 A Google Colab Notebook includes the simulations made for the thesis project. It has text with brief explanations in spanish and english as well.
 
-See [Notebook.ipynb](./Notebook.ipynb) for more information.
+See [Notebook.ipynb](./Simulations_Notebook.ipynb) for more information.
 
 
 ## Requirements
