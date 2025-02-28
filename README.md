@@ -9,10 +9,9 @@ The main modifications added to the neronav library are the following:
 - DynaSR_B - refeering to the Dyna B-pessimistic SR model implementation.
 - DynaSR_RP - refeering to the Dyna a-SR model implementation.
 
-
 See [agents](./agents) for more information.
 
-The code modules that weren´t used for the thesis project were errased as well. 
+Most of the code from the library that wasn’t used for the project was erased as well.
 
 ## Poster presented at MAIN 2024 (Montreal Artificial Intelligence and Neuroscience)
 
