@@ -6,7 +6,7 @@ The main modifications added to the neronav library are the following:
 
 - TDSR - finisehd to implement the B-pessimisitc module to the succesors function.
 - TDSR_RP - added different learning rate for rewards and punishments to the TDSR model, which we call as a-SR.
-- DynaSR_B - refeering to the Dyna B-pessimistic SR model implementation.
+- DynaSR_B - refeering to the Dyna B-SR model implementation.
 - DynaSR_RP - refeering to the Dyna a-SR model implementation.
 
 See [agents](./agents) for more information.
