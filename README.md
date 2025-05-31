@@ -4,10 +4,11 @@ Neuro-Nav (Juliani, A. et. al, 2022), an open-source library for neurally plausi
 
 The main modifications added to the neronav library are the following: 
 
-- TDSR - finisehd to implement the B-pessimisitc module to the succesors function.
-- TDSR_RP - added different learning rate for rewards and punishments to the TDSR model, which we call as a-SR.
-- DynaSR_B - refeering to the Dyna B-SR model implementation.
-- DynaSR_RP - refeering to the Dyna a-SR model implementation.
+- TDSR – Implemented the B module into the successor representation function of the TDSR model to construct the B-SR model.
+- TDSR_RP – Developed based on the original TDSR model by implementing different learning rates for rewards and punishments, resulting in the a-SR model.
+- DynaSR – Incorporated the B-SR module into the DynaSR algorithm to construct the variant Dyna B-SR.
+- DynaSR_RP – Developed to implement the Dyna a-SR model.
+
 
 See [agents](./agents) for more information.
 
