@@ -99,7 +99,7 @@ class DynaSR_B(TDSR_B):
         self = self.dyna.update(self, current_exp)
 
 
-class DynaSR_RP_A(TDSR_A):
+class DynaSR_A(TDSR_A):
     """
     Dyna-enabled version of Temporal Difference Successor Representation algorithm.
     """
