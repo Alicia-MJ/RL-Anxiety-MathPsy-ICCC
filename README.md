@@ -2,15 +2,14 @@
 
 Neuro-Nav (Juliani, A. et. al, 2022), an open-source library for neurally plausible reinforcement learning (RL), was used to perform the simulations and program the RL models developed in the thesis project.  
 
-The main modifications added to the neronav library are the following: 
+The main modifications made to the neronav library for this work are the development of the following models:
 
-- TDSR – Implemented the B module into the successor representation function of the TDSR model to construct the B-SR model.
-- TDSR_RP – Developed based on the original TDSR model by implementing different learning rates for rewards and punishments, resulting in the a-SR model.
-- DynaSR – Incorporated the B-SR module into the DynaSR algorithm to construct the variant Dyna B-SR.
-- DynaSR_RP – Developed to implement the Dyna a-SR model.
+- TDSR_A – Implemented different learning rates for rewards and punishments based on the original TDSR model, in order to develop the alpha-SR model.
+- TDSR_B – Implemented the B-pessimistic module to allow differentiated sensitivity parameters for rewards and punishments within the successor representation function of the original TDSR model, constructing the beta-SR model.
+- DynaSR_A – Developed the Dyna alpha-SR model using the TDSR_A model as a basis, along with the original Dyna SR algorithm from the library.
+- DynaSR_B – Developed the Dyna beta-SR model using the TDSR_B model as a basis, along with the original Dyna SR algorithm from the library.
 
-
-See [agents](./agents) for more information.
+See [agents](./neuronav/agents) for more information.
 
 Most of the code from the library that wasn’t used for the project was erased as well.
 
