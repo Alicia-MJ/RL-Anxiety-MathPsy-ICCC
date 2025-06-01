@@ -16,7 +16,7 @@ Most of the code from the library that wasn’t used for the project was erased 
 
 ## Experiment's Notebook
 
-A Google Colab Notebook includes the simulations made for the thesis project.
+A Google Colab Notebook includes the simulations made for this project.
 
 See [Simulations_Notebook.ipynb](./Simulations_Notebook.ipynb) for more information.
 
