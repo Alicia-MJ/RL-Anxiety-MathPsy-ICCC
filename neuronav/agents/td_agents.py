@@ -4,7 +4,7 @@ import neuronav.utils as utils
 from neuronav.agents.base_agent import BaseAgent
 
 
-class TDSR_A(BaseAgent):
+class TDSR_B(BaseAgent):
     """
     Implementation of one-step temporal difference (TD) Successor Representation Algorithm
     """
@@ -131,7 +131,7 @@ class TDSR_A(BaseAgent):
 
 
 
-class TDSR_B(BaseAgent):
+class TDSR_A(BaseAgent):
     """
     Implementation of one-step temporal difference (TD) Successor Representation Algorithm
     """
