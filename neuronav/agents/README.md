@@ -4,20 +4,22 @@ A set of cognitive neuroscience inspired agents and learning algorithms.
 
 These consist of implementations of the canonical Successor Representation algorithms and more.
 
-The algorithms included here are all tabular. Tabular algorithms work with observations that are integer representations of the state of the agent (e.g., which grid the agent is in a grid world). This corresponds to the `index` observation type.
-
-
 
 ## Included algorithms
 
-| Algorithm | Function(s) | Update Rule(s) | Reference | Description | Code Link |
-| --- | --- | --- | --- | --- | --- |
+The main modifications added to the neronav library for the present work are the development of the following models:
 
-| TD-SR | ψ(s, a), ω(s) | one-step temporal difference | [Dayan, 1993](https://ieeexplore.ieee.org/abstract/document/6795455) | A basic successor representation algorithm | [Code](./td_agents.py) |
+**Found in [/td_agents.py](./td_agents.py) :**
+* TDSR_A – Implemented different learning rates for rewards and punishments based on the original TDSR model, in order to develop the alpha-SR model.
+* TDSR_B – Implemented the B-pessimistic module to allow differentiated sensitivity parameters for rewards and punishments within the successor representation function of the original TDSR model, constructing the beta-SR model.
 
-| Dyna-SR | ψ(s, a), ω(s) | one-step temporal difference, replay-base dyna | [Russek et al., 2017](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005768) | A dyna successor representation algorithm | [Code](./dyna_agents.py) |
+**Found in [/dyna_agents.py](./td_agents.py) :**
+* DynaSR_A – Developed the Dyna alpha-SR model using the TDSR_A model as a basis, along with the original Dyna SR algorithm from the library.
+* DynaSR_B – Developed the Dyna beta-SR model using the TDSR_B model as a basis, along with the original Dyna SR algorithm from the library.
 
+The algorithms' code from the original library that was not used in this work was removed to improve the organization of the information. However, the full codebase of the neuronav library can be accessed at the following [link](https://github.com/awjuliani/neuro-nav). 
 
+It is also important to note that the algorithms of the library - TDSR and Dyna SR - used as foundation to construct the models of this work,  were originally developed based on the article by [Dayan, 1993](https://ieeexplore.ieee.org/abstract/document/6795455) for the TDSR algorithm, and the model proposed by [Russek et al., 2017](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005768) for the DynaSR implementation, which incorporates one-step temporal difference and replay-based Dyna learning. 
 
 
 ## Algorithm hyperparameters
