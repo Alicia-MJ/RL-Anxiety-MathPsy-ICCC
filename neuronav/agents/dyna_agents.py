@@ -1,6 +1,6 @@
 import numpy as np
 import numpy.random as npr
-from neuronav.agents.td_agents import TDSR, TDSR_RP
+from neuronav.agents.td_agents import TDSR_A, TDSR_B
 
 
 class DynaModule:
@@ -61,7 +61,7 @@ class DynaModule:
 
 
 
-class DynaSR(TDSR):
+class DynaSR(TDSR_B):
     """
     Dyna-enabled version of Temporal Difference Successor Representation algorithm.
     """
@@ -79,7 +79,7 @@ class DynaSR(TDSR):
         num_recall:int = 5
 
     ):
-        super(DynaSR, self).__init__(
+        super(DynaSR_B, self).__init__(
             state_size,
             action_size,
             lr=lr,
@@ -99,7 +99,7 @@ class DynaSR(TDSR):
         self = self.dyna.update(self, current_exp)
 
 
-class DynaSR_RP(TDSR_RP):
+class DynaSR_RP(TDSR_A):
     """
     Dyna-enabled version of Temporal Difference Successor Representation algorithm.
     """
@@ -117,7 +117,7 @@ class DynaSR_RP(TDSR_RP):
         lr_p: float = 1e-1,
 
     ):
-        super(DynaSR_RP, self).__init__(
+        super(DynaSR_A, self).__init__(
             state_size,
             action_size,
             lr=lr,
