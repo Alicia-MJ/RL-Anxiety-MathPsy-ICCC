@@ -35,24 +35,12 @@ class BaseAgent:
             action = npr.choice(
                 self.action_size, p=utils.softmax(self.beta * policy_logits)
             )
-        elif self.poltype == "egp":
-
-            if npr.rand() < self.epsilon:
-                action = npr.choice(self.action_size)
-            else:
-                #if all(value == 0 for value in policy_logits): 
-                #    action = npr.choice(self.action_size)
-                #else:                
-                action = np.argmax(policy_logits)
 
         elif self.poltype == "egreedy":
             if npr.rand() < self.epsilon:
                 action = npr.choice(self.action_size)
             else:
-                if all(value == 0 for value in policy_logits): 
-                    action = npr.choice(self.action_size)
-                else:                
-                    action = np.argmax(policy_logits)
+                action = np.argmax(policy_logits)
 
         return action
 
